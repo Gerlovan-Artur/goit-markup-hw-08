@@ -1,0 +1,135 @@
+footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--tertiary-bg-color);
+}
+.ourcompany-contacts {
+    @media screen and (max-width: 1199px) {
+        text-align: center;
+    }
+        
+
+}
+.ourcompany {
+@media screen and (min-width: 1200px) {
+    display: flex;
+}
+}
+
+.address .link {
+    color: var(--button-text);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+.address__email,
+.address__tel {
+    display: block;
+    margin-top: 8px;
+
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+
+    @media screen and (min-width: 1200px) {
+        margin-top: 9px;
+    }
+}
+
+.address {
+    margin-top: 20px;
+}
+
+.follow {
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+
+    @media screen and (max-width: 767px) {
+        margin-top: 60px;
+        
+        margin-left: auto;
+        margin-right: auto;
+    }
+        @media screen and (min-width: 1200px) {
+            margin-left: 70px;
+                margin-right: 93px;
+                align-items: flex-start;
+}
+}
+.follow__text {
+    margin-bottom: 20px;
+    width: 145px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03px;
+    text-transform: uppercase;
+
+    color: var(--button-text);
+
+}
+
+
+
+.ourcompany__social-list {
+    display: flex;
+}
+
+.social-list__item--white {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+
+    transition-property: background-color;
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+
+
+&:hover,
+&:focus {
+    background-color: var(--accent-color);
+
+}
+& + & {
+    margin-left: 10px;
+}
+}
+.social-list__icon {
+    fill: var(--button-text);
+}
+
+.submit__text {
+    text-align: center;
+
+    @media screen and (min-width: 1200px) {
+        text-align: start;
+    }
+}
+.submit__input {
+    @media screen and (min-width: 768px) {
+        width: 450px;
+            margin-left: auto;
+            margin-right: auto;
+    }
+    
+}
+.ourcompany__info {
+    @media screen and (min-width: 768px) {
+        display:flex;
+        justify-content: space-around;
+    }
+}
+.submit {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-top: 60px;
+    }
+}

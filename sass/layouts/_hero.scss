@@ -1,0 +1,115 @@
+.hero__overlay {
+    padding-top: 118px;
+    padding-bottom: 118px;
+
+    max-width: 1600px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../images/hero.jpg);
+    background-position: center;
+    background-size: cover;
+
+    @media screen and (min-width: 1200px) {
+            padding-top: 200px;
+            padding-bottom: 200px;
+            height: 600px;
+        }
+}
+
+.hero {
+
+
+    background-color: #c4c4c4;
+}
+
+.hero__hero-title {
+    display: block;
+    margin: 0 auto;
+
+    max-width: 360px;
+
+
+    color: var(--button-text);
+    font-style: normal;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    text-align: center;
+
+   
+        @media screen and (min-width: 1200px) {
+            font-size: 44px;
+                line-height: 1.36;
+            max-width: 696px;
+        }
+}
+
+.hero__button {
+    display: block;
+    padding: 10px 32px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: var(--feature-gap);
+    border: none;
+
+
+    min-width: 200px;
+
+
+    background-color: var(--accent-color);
+    color: var(--button-text);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+
+    cursor: pointer;
+
+
+}
+
+.hero__backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 93px;
+
+    overflow-y:scroll;
+
+    opacity: 1;
+    transform: scale(1, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    z-index: 50;
+
+    background-color: rgba(0, 0, 0, 0.2);
+
+    
+
+
+&.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+
+    transform: scale(2, 2);
+
+
+}
+}

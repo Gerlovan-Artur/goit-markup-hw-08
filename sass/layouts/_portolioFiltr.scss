@@ -1,0 +1,76 @@
+.filtr {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+@media screen and (min-width: 1200px) {
+    padding-top: 94px;
+        padding-bottom: 94px;
+}
+
+}
+
+.filtr__title {
+    display: none;
+}
+
+.filtr-menu {
+    display: flex;
+
+    @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+    }
+    @media screen and (min-width: 768px) {
+
+        justify-content: center;
+    }
+    
+
+
+
+}
+
+.filtr__button {
+    display: block;
+    padding: 6px 22px;
+
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.03em;
+
+    background-color: var(--secondary-bg-color);
+    color: var(--title-text-color);
+    border-radius: 4px;
+    border: none;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    cursor: pointer;
+
+    transition-property: background-color;
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+
+
+&:hover,
+&:focus {
+
+    color: var(--button-text);
+    background-color: var(--accent-color);
+
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 3px 1px rgba(0, 0, 0, 0.1);
+}
+}
+   
+.filtr-menu__item+.filtr-menu__item {
+    margin-left: 8px;
+}
+.filtr-menu__item:nth-child(4) {
+    @media screen and (max-width: 767px) {
+    margin-left: 0;
+}
+}
+.filtr-menu__item:nth-child(n+4) {
+    @media screen and (max-width: 767px) {
+        margin-top: 15px;
+}
+}

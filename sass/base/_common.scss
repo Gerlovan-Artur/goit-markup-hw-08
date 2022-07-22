@@ -1,0 +1,43 @@
+body {
+
+    color: var(--primary-text-color);
+    font-family: var(--main-font);
+    letter-spacing: 0.03em;
+}
+body.modal-open {
+    overflow: hidden;
+}
+
+.link {
+    text-decoration: none;
+    outline: none;
+
+    transition-property: background-color;
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+
+
+&:hover,
+&:focus {
+    color: var(--accent-color);
+}
+}
+h2,
+h3 {
+    
+    color: var(--title-text-color);
+}
+
+p {
+   
+    color: var(--primary-text-color);
+}
+.section__title {
+
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17;
+    text-align: center;
+
+
+}
