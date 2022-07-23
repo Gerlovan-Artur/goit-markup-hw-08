@@ -207,13 +207,20 @@
             <ul class="list work">
                 <li class="work__item">
                     <div class="work__thumb">
-                    <img src="./images/comp.jpg" alt="Человек сидит за компьютером" width="370" />
+                    <img
+                    srcset="./images/note.jpg 1x,
+                    ./images/note@2x.jpg 2x" 
+                    src="./images/note.jpg " alt="Человек сидит за компьютером" width="370" />
                 <span>Десктопные приложения</span> </div></li>
                 <li class="work__item"><div class="work__thumb">
-                    <img src="./images/tel.jpg" alt="Человек с телефоном в руках" width="370"/>
+                    <img srcset="./images/phone.jpg 1x,
+                    ./images/phone@2x.jpg 2x" 
+                    src="./images/phone.jpg " alt="Человек с телефоном в руках" width="370"/>
                 <span>Мобильные приложения</span></div></li>
                 <li class="work__item"><div class="work__thumb">
-                    <img src="./images/tab.jpg" alt="Человек с планшетом в руках" width="370" />
+                    <img srcset="./images/tab.jpg 1x,
+                    ./images/tab@2x.jpg 2x" 
+                    src="./images/tab.jpg " alt="Человек с планшетом в руках" width="370" />
                 <span>Дизайнерские решения</span></div></li>
             </ul>
             </div>
@@ -229,7 +236,18 @@
 
                 <li class="team__item">
 
-                    <img src="./photo/igor.jpg" alt="Фото Игоря Демьяненко" width="270">
+                    <img 
+                    srcset="
+                    ./photo/imgd270.jpg 270w,
+                    ./photo/imgd354.jpg 354w,
+                    ./photo/imgd450.jpg 450w,
+                    ./photo/imgd270@2x.jpg 540w,
+                    ./photo/imgd354@2x.jpg 708w,
+                    ./photo/imgd450@2x.jpg 900w"
+
+                    src="./photo/imgd270.jpg" alt="Фото Игоря Демьяненко" 
+                    sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, (min-width: 480px) 100vw, 100vw"
+                    />
                 <div class="team__name name"><h3 class="name__title">Игорь Демьяненко</h3>
                     <p class="name__text">Product Designer</p></div>
                     
@@ -268,7 +286,17 @@
                 </li>
 
                 <li class="team__item">
-                    <img src="./photo/olga.jpg" alt="Фото Ольга Репина" width="270"   />
+                    <img
+                    srcset="
+                    ./photo/imgc270.jpg 270w,
+                    ./photo/imgc354.jpg 354w,
+                    ./photo/imgc450.jpg 450w,
+                    ./photo/imgc270@2x.jpg 540w,
+                    ./photo/imgc354@2x.jpg 708w,
+                    ./photo/imgc450@2x.jpg 900w" 
+                    src="./photo/imgc270.jpg" alt="Фото Ольга Репина" 
+                    sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, (min-width: 480px) 100vw, 100vw"
+                    />
                 <div class="team__name name"><h3 class="name__title">Ольга Репина</h3>
                     <p class="name__text">Frontend Developer</p>
                 </div>
@@ -307,7 +335,17 @@
                 </li>
 
                 <li class="team__item">
-                    <img src="./photo/nikolay.jpg" alt="Фото Николай Тарасов" width="270"  />
+                    <img
+                    srcset="
+                    ./photo/imgb270.jpg 270w,
+                    ./photo/imgb354.jpg 354w,
+                    ./photo/imgb450.jpg 450w,
+                    ./photo/imgb270@2x.jpg 540w,
+                    ./photo/imgb354@2x.jpg 708w,
+                    ./photo/imgb450@2x.jpg 900w" 
+                    src="./photo/imgb270.jpg" alt="Фото Николай Тарасов" 
+                    sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, (min-width: 480px) 100vw, 100vw"
+                    />
                 <div class="team__name name"><h3 class="name__title">Николай Тарасов</h3>
                     <p class="name__text">Marketing</p>
                 </div>
@@ -346,7 +384,18 @@
                 </li>
 
                 <li class="team__item">
-                    <img src="./photo/mikhail.jpg" alt="Фото Михаил Ермаков" width="270"  />
+                    <img
+                    srcset="
+                    ./photo/imga270.jpg 270w,
+                    ./photo/imga354.jpg 354w,
+                    ./photo/imga450.jpg 450w,
+                    ./photo/imga270@2x.jpg 540w,
+                    ./photo/imga354@2x.jpg 708w,
+                    ./photo/imga450@2x.jpg 900w" 
+                    src="./photo/imga270.jpg"
+                 alt="Фото Михаил Ермаков" 
+                 sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, (min-width: 480px) 100vw, 100vw"
+                    />
                 <div class="team__name name"><h3 class="name__title">Михаил Ермаков</h3>
                     <p class="name__text">UI Designer</p>
                 </div>

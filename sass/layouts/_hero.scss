@@ -9,7 +9,7 @@
     background-image: linear-gradient(to right,
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-        url(../images/hero.jpg);
+        url(../images/header480.jpg);
     background-position: center;
     background-size: cover;
 
@@ -18,8 +18,49 @@
             padding-bottom: 200px;
             height: 600px;
         }
+       
 }
+ @media (min-resolution: 2dppx) {
+    .hero__overlay {
+        background-image: linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+                url(../images/header480@2x.jpg);
+    }
+ }
+ @media (min-width: 481px) {
+    .hero__overlay {
+        background-image: linear-gradient(to right,
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url(../images/header768.jpg);
+    }
+        @media (min-resolution: 2dppx) {
+            .hero__overlay {
+                background-image: linear-gradient(to right,
+                        rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)),
+                    url(../images/header768@2x.jpg);
+            }
+ }
+}
+@media (min-width: 769px) {
+    .hero__overlay {
+        background-image: linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(../images/header1600.jpg);
+    }
 
+    @media (min-resolution: 2dppx) {
+        .hero__overlay {
+            background-image: linear-gradient(to right,
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url(../images/header1600@2x.jpg);
+        }
+    }
+}
 .hero {
 
 
