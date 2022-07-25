@@ -10,25 +10,15 @@
 }
 .team {
     
-    margin-top: var(--feature-gap);
-
+    
     @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
         margin: -15px;
     }
-        
+          
+}
 
-    @media screen and (min-width: 1200px) {
-        margin-top: 50px;
-    }
-    
-}
-.ourteam__title {
-    @media screen and (min-width: 768px) {
-    margin-bottom: 30px;
-    }
-}
 .team__item {
     
     padding-bottom: var(--feature-gap);

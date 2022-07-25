@@ -15,15 +15,7 @@
     flex-wrap: wrap;
     margin: -15px;
     
-
-    margin-top: var(--feature-gap);
-
-
-    
-        @media screen and (min-width: 1200px) {
-            margin-top: 50px;
-        }
-
+   
 }
 .clients__item {
     flex-basis: calc((100% - 2 * 30px) / 2);

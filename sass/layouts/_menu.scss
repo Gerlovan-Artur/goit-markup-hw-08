@@ -8,7 +8,7 @@
     @media screen and (max-width: 767px) {
     display: none;
 
-    position: absolute;
+    position: fixed;
     overflow-y: scroll;
 
     z-index: 800;
@@ -107,11 +107,7 @@
     margin-left: 50px;
 }
 }
-.site-nav__item:last-child {
-    @media screen and (max-width: 767px) {
-        margin-bottom: 306px;
-    }
-}
+
 .site-contact__mail-svg {
     @media screen and (max-width: 767px) {
     display: none;
@@ -145,6 +141,12 @@
 }
 }
 .site-contact {
+    @media screen and (max-width: 767px) {
+        position: absolute;
+        left: 40px;
+        bottom: 134px;
+        
+    }
     
     @media screen and (min-width: 768px) {
         display: flex;
@@ -207,7 +209,7 @@ font-size: 14px;
 }
 .menu__button {
 
-    position: absolute;
+    position: fixed;
     top: 10px;
     right: 10px;
 
@@ -252,16 +254,29 @@ font-size: 14px;
                 color: var(--primary-text-color);
     }
 }
+.menu__button.is-open {
+position: absolute;
+    top: 10px;
+    right: 10px;
+}
 .menu__button.is-open .menu__icon--cross {
     display: none;
+    
+    
 }
 .menu__button.is-open .menu__icon--menu {
     display: block;
+    
+    
 }
 .site-social {
     @media screen and (max-width: 767px) {
+        position: absolute;
+        left: 40px;
+        bottom: 48px;
+        
         display: flex;
-        margin-top: 64px;
+        
         
     }
         @media screen and (min-width: 768px) {
